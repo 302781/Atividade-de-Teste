@@ -1,10 +1,12 @@
-🧪 Testes Automatizados com Cypress
-Este projeto tem como objetivo realizar testes automatizados de uma aplicação web utilizando o framework Cypress. A estrutura contempla testes de login, navegação por produtos, carrinho de compras e processo de checkout.
+# 🧪 Testes Automatizados com Cypress
 
-📁 Estrutura do Projeto
-plaintext
-Copiar
-Editar
+Este projeto tem como objetivo realizar testes automatizados de uma aplicação web utilizando o framework **Cypress**. A estrutura contempla testes de login, navegação por produtos, carrinho de compras e processo de checkout.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```plaintext
 Atividade-de-Teste-main/
 ├── Cypress/
 │   ├── e2e/
@@ -19,66 +21,81 @@ Atividade-de-Teste-main/
 │       └── e2e.js               # Arquivo de configuração global
 ├── package-lock.json
 ├── Cenario BDD.Teste.pdf        # Documento com o cenário de teste em BDD
-🚀 Como executar os testes
-1. Pré-requisitos
-Node.js instalado (recomendado usar nvm)
+```
 
-Cypress instalado globalmente ou localmente no projeto
+---
 
-2. Instalar dependências
-bash
-Copiar
-Editar
+## 🚀 Como executar os testes
+
+### 1. Pré-requisitos
+
+* Node.js instalado (recomendado usar [nvm](https://github.com/nvm-sh/nvm))
+* Cypress instalado globalmente ou localmente no projeto
+
+### 2. Instalar dependências
+
+```bash
 npm install
-3. Executar os testes
+```
+
+### 3. Executar os testes
+
 Para abrir a interface gráfica do Cypress:
 
-bash
-Copiar
-Editar
+```bash
 npx cypress open
+```
+
 Ou para rodar os testes em modo headless (linha de comando):
 
-bash
-Copiar
-Editar
+```bash
 npx cypress run
-📋 Cenários de Teste
+```
+
+---
+
+## 📋 Cenários de Teste
+
 Os testes automatizados cobrem os seguintes fluxos principais:
 
-🔐 Login
-Acesso com credenciais válidas
+### 🔐 Login
 
-Validação de erros com dados incorretos
+* Acesso com credenciais válidas
+* Validação de erros com dados incorretos
 
-🛍️ Produtos
-Listagem e visualização de produtos
+### 🛍️ Produtos
 
-Ações disponíveis por item
+* Listagem e visualização de produtos
+* Ações disponíveis por item
 
-🛒 Carrinho
-Adição e remoção de itens
+### 🛒 Carrinho
 
-Atualização de quantidade
+* Adição e remoção de itens
+* Atualização de quantidade
 
-💳 Checkout
-Simulação de finalização de compra
+### 💳 Checkout
 
-Validação de campos obrigatórios
+* Simulação de finalização de compra
+* Validação de campos obrigatórios
 
-📄 Documentação BDD
-O arquivo Cenario BDD.Teste.pdf contém os cenários escritos em linguagem Gherkin, facilitando a leitura e entendimento dos testes por pessoas não técnicas.
+---
 
-🧠 Observações
-Você pode adicionar mais testes à pasta Cypress/e2e/.
+## 📄 Documentação BDD
 
-Arquivos de suporte podem conter comandos reutilizáveis para facilitar a manutenção.
+O arquivo `Cenario BDD.Teste.pdf` contém os cenários escritos em **linguagem Gherkin**, facilitando a leitura e entendimento dos testes por pessoas não técnicas.
 
-O Cypress gera relatórios de execução automaticamente (pasta downloads/).
+---
 
-🛠 Tecnologias Utilizadas
-Cypress
-JavaScript (ES6)
-Node.js
-Node.js
+## 🧠 Observações
 
+* Você pode adicionar mais testes à pasta `Cypress/e2e/`.
+* Arquivos de suporte podem conter comandos reutilizáveis para facilitar a manutenção.
+* O Cypress gera relatórios de execução automaticamente (pasta `downloads/`).
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+* [Cypress](https://www.cypress.io/)
+* JavaScript (ES6)
+* Node.js
